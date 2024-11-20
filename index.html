@@ -9,7 +9,7 @@
   <body class="bg-gray-100">
     <!-- HEADER -->
     <header
-      class="bg-white shadow-sm px-4 py-3 flex items-center justify-between"
+      class="bg-white shadow-sm px-4 py-3 flex items-center justify-between sticky top-0 z-50"
     >
       <!-- Logo and Name -->
       <div class="flex items-center space-x-3">
@@ -87,7 +87,7 @@
       </div>
     </header>
 
-    <!-- SECTION 1 -->
+    <!-- SECTION 1 | Featured -->
     <section class="relative bg-gray-900 text-white">
       <!-- Background Image -->
       <div class="absolute inset-0 -z-10">
@@ -125,15 +125,15 @@
 
         <!-- Carousel Indicators -->
         <div class="absolute bottom-4 flex space-x-2">
-          <span class="h-2 w-2 bg-gray-300"></span>
+          <span class="h-2 w-4 bg-gray-300"></span>
           <span class="h-2 w-2 bg-gray-500"></span>
           <span class="h-2 w-2 bg-gray-500"></span>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 2 -->
-    <section class="max-w-7xl mx-auto bg-gray-100 py-10">
+    <!-- SECTION 2 | Collection -->
+    <section class="max-w-[85rem] px-8 mx-auto bg-gray-100 py-10">
       <div
         class="flex flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-12"
       >
@@ -269,8 +269,8 @@
       </div>
     </section>
 
-    <!-- SECTION 3 -->
-    <section class="max-w-7xl mx-auto bg-gray-100 py-12">
+    <!-- SECTION 3 | Special Offers -->
+    <section class="max-w-[85rem] px-8 mx-auto bg-gray-100 py-12">
       <div class="text-center mb-12">
         <h2 class="text-3xl lg:text-4xl font-bold text-gray-800">
           Special Offers
@@ -482,8 +482,8 @@
       </div>
     </section>
 
-    <!-- SECTION 4 -->
-    <section class="max-w-7xl mx-auto bg-gray-100 py-12">
+    <!-- SECTION 4 | Catalgoue -->
+    <section class="max-w-[85rem] px-8 mx-auto bg-gray-100 py-12">
       <!-- Categories -->
       <div class="flex flex-wrap gap-4 mb-8">
         <button class="px-4 py-2 bg-gray-900 text-white shadow">
@@ -519,47 +519,186 @@
         >
           Religion
         </button>
-        <button
-          class="px-4 py-2 bg-gray-700 text-white shadow hover:bg-gray-600"
-        >
-          SALE
-        </button>
       </div>
 
       <!-- Product Grid -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div
+        class="grid align-center grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-6"
+      >
         <!-- Product Card -->
-        <div class="bg-white shadow relative">
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
           <img
-            src="https://via.placeholder.com/200x300"
-            alt="The Naked Pint"
-            class="w-full h-48 object-cover"
+            src="src/image/sctn-4-1.jpg"
+            alt="Outliers"
+            class="object-cover"
           />
           <div class="p-4 text-center">
-            <h3 class="text-sm font-semibold">VOLETASA MYTRAS</h3>
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors"
+            >
+              LERAS NUYAS
+            </h3>
             <p class="text-gray-600 text-xs mt-1">
               Jertasas nyrae iases naryasaas
             </p>
             <!-- Genre Tags -->
             <div class="flex justify-center space-x-2 mt-2">
               <span class="text-xs bg-gray-700 text-white px-2 py-1"
-                >Fiction</span
+                >Biography</span
               >
               <span class="text-xs bg-gray-600 text-white px-2 py-1"
-                >Adventure</span
+                >Self-help</span
               >
             </div>
-            <p class="text-lg font-bold mt-4">$21.50</p>
+            <p class="text-lg font-bold mt-4">$16.20</p>
           </div>
         </div>
 
         <!-- Product Card -->
-        <div class="bg-white shadow relative">
-          <div
-            class="absolute top-2 left-2 bg-gray-700 text-white text-xs px-2 py-1"
-          >
-            NEW
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-2.jpg"
+            alt="20,000 Leagues"
+            class="object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3 class="text-sm font-semibold">DOLORE FEROAS</h3>
+            <p class="text-gray-600 text-xs mt-1">
+              Bertasas cerhyuas naryasaas
+            </p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-gray-700 text-white px-2 py-1"
+                >Science</span
+              >
+              <span class="text-xs bg-gray-600 text-white px-2 py-1"
+                >Classic</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$18.99</p>
           </div>
+        </div>
+
+        <!-- Product Card -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-3.jpg"
+            alt="Outliers"
+            class="object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3 class="text-sm font-semibold">LERAS NUYAS</h3>
+            <p class="text-gray-600 text-xs mt-1">
+              Jertasas nyrae iases naryasaas
+            </p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-gray-700 text-white px-2 py-1"
+                >Biography</span
+              >
+              <span class="text-xs bg-gray-600 text-white px-2 py-1"
+                >Self-help</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$16.20</p>
+          </div>
+        </div>
+
+        <!-- Product Card -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-4.jpg"
+            alt="The Divine Comedy"
+            class="object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3 class="text-sm font-semibold">KERTYSAS</h3>
+            <p class="text-gray-600 text-xs mt-1">
+              Bertasas cerhyuas naryasaas
+            </p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-gray-700 text-white px-2 py-1"
+                >Poetry</span
+              >
+              <span class="text-xs bg-gray-600 text-white px-2 py-1"
+                >Classic</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$17.80</p>
+          </div>
+        </div>
+
+        <!-- Product Card -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-5.jpg"
+            alt="Alice's Adventures"
+            class="object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3 class="text-sm font-semibold">BEREAS MIOAS</h3>
+            <p class="text-gray-600 text-xs mt-1">
+              Jertasas nyrae iases naryasaas
+            </p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-gray-700 text-white px-2 py-1"
+                >Fantasy</span
+              >
+              <span class="text-xs bg-gray-600 text-white px-2 py-1"
+                >Children</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$20.00</p>
+          </div>
+        </div>
+
+        <!-- Product Card -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="https://via.placeholder.com/200x300"
+            alt="Outliers"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors"
+            >
+              LERAS NUYAS
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">
+              Jertasas nyrae iases naryasaas
+            </p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-gray-700 text-white px-2 py-1"
+                >Biography</span
+              >
+              <span class="text-xs bg-gray-600 text-white px-2 py-1"
+                >Self-help</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$16.20</p>
+          </div>
+        </div>
+
+        <!-- Product Card -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
           <img
             src="https://via.placeholder.com/200x300"
             alt="20,000 Leagues"
@@ -584,7 +723,9 @@
         </div>
 
         <!-- Product Card -->
-        <div class="bg-white shadow relative">
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
           <img
             src="https://via.placeholder.com/200x300"
             alt="Outliers"
@@ -609,7 +750,9 @@
         </div>
 
         <!-- Product Card -->
-        <div class="bg-white shadow relative">
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
           <img
             src="https://via.placeholder.com/200x300"
             alt="The Divine Comedy"
@@ -634,7 +777,9 @@
         </div>
 
         <!-- Product Card -->
-        <div class="bg-white shadow relative">
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
           <img
             src="https://via.placeholder.com/200x300"
             alt="Alice's Adventures"
@@ -660,8 +805,8 @@
       </div>
     </section>
 
-    <!-- SECTION 5 -->
-    <section class="max-w-7xl mx-auto bg-gray-100 py-16">
+    <!-- SECTION 5 | Testimonials -->
+    <section class="max-w-[85rem] px-8 mx-auto bg-gray-100 py-16">
       <div class="text-center mb-12">
         <h4 class="text-sm font-semibold text-gray-600 uppercase tracking-wide">
           Testimonials
@@ -736,8 +881,8 @@
       </div>
     </section>
 
-    <!-- SECTION 6 -->
-    <section class="max-w-7xl mx-auto bg-gray-100 py-16">
+    <!-- SECTION 6 | Latest News -->
+    <section class="max-w-[85rem] px-8 mx-auto bg-gray-100 py-16">
       <div class="flex items-center justify-between mb-12">
         <div>
           <h2 class="text-3xl font-bold text-gray-800">Latest News</h2>
@@ -910,7 +1055,7 @@
       </div>
     </section>
 
-    <!-- SECTION 7 -->
+    <!-- SECTION 7 | Newsletter -->
     <section
       class="max-w-7xl mx-auto mb-32 relative bg-gray-800 py-12 shadow-lg"
     >
