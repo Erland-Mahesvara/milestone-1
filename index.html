@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bookoe Header</title>
+    <title>Bookish - Book Store</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-100">
@@ -13,25 +13,8 @@
       <div class="px-4 py-3 flex items-center justify-between">
         <!-- Logo and Name -->
         <div class="flex items-center space-x-3">
-          <div class="bg-gray-800 p-2">
-            <!-- Icon Placeholder -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3 5h12M9 3v2m0 14v2m-9-6h18M3 19h18M15 3v2m0 14v2M9 7h6m0 4h6m-6 0v6m0-6l6 6m0-6H9"
-              />
-            </svg>
-          </div>
           <div>
-            <h1 class="text-lg font-semibold text-gray-800">Bookoe</h1>
+            <h1 class="text-lg font-semibold text-gray-800">Bookish</h1>
             <p class="hidden sm:block text-sm text-gray-500">
               Book Store Website
             </p>
@@ -40,23 +23,6 @@
 
         <!-- Search Bar -->
         <div class="mx-[6.5vw] flex items-center space-x-2 flex-grow">
-          <button class="text-gray-500 text-sm flex items-center space-x-1">
-            <span>Menus</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </button>
           <input
             type="text"
             placeholder="Search over 30 million book titles"
@@ -139,18 +105,18 @@
     </header>
 
     <!-- SECTION 1 | Featured -->
-    <section class="relative bg-gray-900 text-white">
+    <section class="relative text-white">
       <!-- Background Image -->
       <div class="absolute inset-0 -z-10">
         <img
-          src="https://via.placeholder.com/1600x900"
+          src="src/image/ftrd-1.jpg"
           alt="The History of Phipino"
           class="w-full h-full object-cover"
         />
       </div>
 
       <!-- Overlay -->
-      <div class="absolute inset-0 bg-gray-900 bg-opacity-70"></div>
+      <div class="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
 
       <!-- Content -->
       <div
@@ -160,12 +126,10 @@
         <div
           class="bg-gray-800 text-gray-300 text-xs uppercase tracking-widest font-medium px-3 py-1 mb-4"
         >
-          Science Fiction
+          HISTORY
         </div>
         <!-- Title -->
-        <h1 class="text-3xl lg:text-5xl font-bold mb-6">
-          The History of Phipino
-        </h1>
+        <h1 class="text-3xl lg:text-5xl mb-6">TWELVE WHO RULED</h1>
         <!-- Button -->
         <a
           href="#"
@@ -198,7 +162,7 @@
           <div class="flex items-center justify-center relative">
             <!-- Book Cards -->
             <div
-              class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center items-center"
+              class="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-items-center items-center"
             >
               <div
                 class="bg-gray-800 text-white flex flex-col items-center justify-center h-48 w-32 shadow"
@@ -263,7 +227,7 @@
           <div class="flex items-center justify-center relative">
             <!-- Book Cards -->
             <div
-              class="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center items-center"
+              class="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-items-center items-center"
             >
               <div
                 class="bg-gray-800 text-white flex flex-col items-center justify-center h-48 w-32 shadow"
@@ -327,20 +291,24 @@
           Special Offers
         </h2>
         <p class="text-gray-600 mt-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Grab bestselling reads at unbeatable prices—limited time only!
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Card 1 -->
-        <div class="bg-white shadow overflow-hidden">
+        <div class="relative bg-white shadow overflow-hidden">
+          <span
+            class="absolute top-3 left-3 bg-orange-500 text-white text-sm font-bold px-3 py-1 animate-bounce"
+          >
+            SALE
+          </span>
           <img
-            src="https://via.placeholder.com/400x200"
+            src="src/image/sctn-3-1.jpg"
             alt="SECONDS"
             class="w-full h-48 object-cover"
           />
           <div class="p-6">
-            <h3 class="text-lg font-bold mb-2">SECONDS [Part I]</h3>
+            <h3 class="text-lg font-bold mb-2">THE 'A' BOOK</h3>
             <div class="flex space-x-2 mb-4">
               <span class="bg-gray-800 text-gray-100 text-xs px-2 py-1"
                 >BIOGRAPHY</span
@@ -386,14 +354,19 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="bg-white shadow overflow-hidden">
+        <div class="relative bg-white shadow overflow-hidden">
+          <span
+            class="absolute top-3 left-3 bg-orange-500 text-white text-sm font-bold px-3 py-1 animate-bounce"
+          >
+            SALE
+          </span>
           <img
-            src="https://via.placeholder.com/400x200"
+            src="src/image/sctn-3-2.jpg"
             alt="Terrible Madness"
             class="w-full h-48 object-cover"
           />
           <div class="p-6">
-            <h3 class="text-lg font-bold mb-2">Terrible Madness</h3>
+            <h3 class="text-lg font-bold mb-2">THE 'B' BOOK</h3>
             <div class="flex space-x-2 mb-4">
               <span class="bg-gray-800 text-gray-100 text-xs px-2 py-1"
                 >BIOGRAPHY</span
@@ -439,14 +412,19 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="bg-white shadow overflow-hidden">
+        <div class="relative bg-white shadow overflow-hidden">
+          <span
+            class="absolute top-3 left-3 bg-orange-500 text-white text-sm font-bold px-3 py-1 animate-bounce"
+          >
+            SALE
+          </span>
           <img
-            src="https://via.placeholder.com/400x200"
+            src="src/image/sctn-3-3.jpg"
             alt="REWORK"
             class="w-full h-48 object-cover"
           />
           <div class="p-6">
-            <h3 class="text-lg font-bold mb-2">REWORK</h3>
+            <h3 class="text-lg font-bold mb-2">THE 'C' BOOK</h3>
             <div class="flex space-x-2 mb-4">
               <span class="bg-gray-800 text-gray-100 text-xs px-2 py-1"
                 >BIOGRAPHY</span
@@ -535,11 +513,12 @@
 
     <!-- SECTION 4 | Catalgoue -->
     <section class="max-w-[85rem] px-8 mx-auto bg-gray-100 py-12">
+      <h2 class="mb-6 text-3xl lg:text-4xl font-bold text-gray-800">
+        Catalogue
+      </h2>
       <!-- Categories -->
       <div class="flex flex-wrap gap-4 mb-8">
-        <button class="px-4 py-2 bg-gray-900 text-white shadow">
-          Biography
-        </button>
+        <button class="px-4 py-2 bg-gray-900 text-white shadow">All</button>
         <button
           class="px-4 py-2 bg-gray-300 text-gray-900 shadow hover:bg-gray-400"
         >
@@ -581,7 +560,7 @@
           class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
         >
           <img
-            src="src/image/sctn-4-4.jpg"
+            src="src/image/sctn-4-1-halved.jpg.jpg"
             srcset="
               src/image/sctn-4-1-halved.jpg 1023w,
               src/image/sctn-4-1.jpg        1024w
@@ -591,20 +570,18 @@
           />
           <div class="p-4 text-center">
             <h3
-              class="text-sm font-semibold hover:text-gray-700 transition-colors"
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
             >
               DAISY JONES & THE SIX
             </h3>
-            <p class="text-gray-600 text-xs mt-1">
-              Jertasas nyrae iases naryasaas
-            </p>
+            <p class="text-gray-600 text-xs mt-1">Taylor Jenkins Reid</p>
             <!-- Genre Tags -->
             <div class="flex justify-center space-x-2 mt-2">
               <span class="text-xs bg-gray-700 text-white px-2 py-1"
-                >Biography</span
+                >Historical Fiction</span
               >
               <span class="text-xs bg-gray-600 text-white px-2 py-1"
-                >Self-help</span
+                >Music</span
               >
             </div>
             <p class="text-lg font-bold mt-4">$16.20</p>
@@ -616,25 +593,31 @@
           class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
         >
           <img
-            src="src/image/sctn-4-2.jpg"
-            alt="20,000 Leagues"
-            class="object-cover"
+            src="src/image/sctn-4-2-halved.jpg.jpg"
+            srcset="
+              src/image/sctn-4-2-halved.jpg 1023w,
+              src/image/sctn-4-2.jpg        1024w
+            "
+            alt="Daisy Jones & The Six"
+            class="w-full object-cover"
           />
           <div class="p-4 text-center">
-            <h3 class="text-sm font-semibold">DOLORE FEROAS</h3>
-            <p class="text-gray-600 text-xs mt-1">
-              Bertasas cerhyuas naryasaas
-            </p>
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              THE FROZEN RIVER
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Ariel Lawhon</p>
             <!-- Genre Tags -->
             <div class="flex justify-center space-x-2 mt-2">
               <span class="text-xs bg-gray-700 text-white px-2 py-1"
-                >Science</span
+                >Historical Fiction</span
               >
               <span class="text-xs bg-gray-600 text-white px-2 py-1"
-                >Classic</span
+                >Myster</span
               >
             </div>
-            <p class="text-lg font-bold mt-4">$18.99</p>
+            <p class="text-lg font-bold mt-4">$12.34</p>
           </div>
         </div>
 
@@ -644,21 +627,27 @@
         >
           <img
             src="src/image/sctn-4-3.jpg"
-            alt="Outliers"
-            class="object-cover"
+            srcset="
+              src/image/sctn-4-3-halved.jpg 1023w,
+              src/image/sctn-4-3.jpg        1024w
+            "
+            alt="Daisy Jones & The Six"
+            class="w-full object-cover"
           />
           <div class="p-4 text-center">
-            <h3 class="text-sm font-semibold">LERAS NUYAS</h3>
-            <p class="text-gray-600 text-xs mt-1">
-              Jertasas nyrae iases naryasaas
-            </p>
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              RED RISING
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Pierce Brown</p>
             <!-- Genre Tags -->
             <div class="flex justify-center space-x-2 mt-2">
               <span class="text-xs bg-gray-700 text-white px-2 py-1"
-                >Biography</span
+                >Fantasy</span
               >
               <span class="text-xs bg-gray-600 text-white px-2 py-1"
-                >Self-help</span
+                >Science Fiction</span
               >
             </div>
             <p class="text-lg font-bold mt-4">$16.20</p>
@@ -670,25 +659,31 @@
           class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
         >
           <img
-            src="src/image/sctn-4-4.jpg"
-            alt="The Divine Comedy"
-            class="object-cover"
+            src="src/image/sctn-4-4-halved.jpg.jpg"
+            srcset="
+              src/image/sctn-4-4-halved.jpg 1023w,
+              src/image/sctn-4-4.jpg        1024w
+            "
+            alt="Daisy Jones & The Six"
+            class="w-full object-cover"
           />
           <div class="p-4 text-center">
-            <h3 class="text-sm font-semibold">KERTYSAS</h3>
-            <p class="text-gray-600 text-xs mt-1">
-              Bertasas cerhyuas naryasaas
-            </p>
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              DARK MATTER
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Blake Crouch</p>
             <!-- Genre Tags -->
             <div class="flex justify-center space-x-2 mt-2">
               <span class="text-xs bg-gray-700 text-white px-2 py-1"
-                >Poetry</span
+                >Science Fiction</span
               >
               <span class="text-xs bg-gray-600 text-white px-2 py-1"
-                >Classic</span
+                >Thriller</span
               >
             </div>
-            <p class="text-lg font-bold mt-4">$17.80</p>
+            <p class="text-lg font-bold mt-4">$12.34</p>
           </div>
         </div>
 
@@ -698,24 +693,265 @@
         >
           <img
             src="src/image/sctn-4-5.jpg"
-            alt="Alice's Adventures"
-            class="object-cover"
+            srcset="
+              src/image/sctn-4-5-halved.jpg 1023w,
+              src/image/sctn-4-5.jpg        1024w
+            "
+            alt="Daisy Jones & The Six"
+            class="w-full object-cover"
           />
           <div class="p-4 text-center">
-            <h3 class="text-sm font-semibold">BEREAS MIOAS</h3>
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              THE INSITUTTE
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Stephen King</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-gray-700 text-white px-2 py-1"
+                >Horror</span
+              >
+              <span class="text-xs bg-gray-600 text-white px-2 py-1"
+                >Science Fiction</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$16.20</p>
+          </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-6.jpg"
+            srcset="
+              src/image/sctn-4-6-halved.jpg 1023w,
+              src/image/sctn-4-6.jpg        1024w
+            "
+            alt="Daisy Jones & The Six"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              THINGS WE LOST IN THE FIRE
+            </h3>
             <p class="text-gray-600 text-xs mt-1">
               Jertasas nyrae iases naryasaas
             </p>
             <!-- Genre Tags -->
             <div class="flex justify-center space-x-2 mt-2">
               <span class="text-xs bg-gray-700 text-white px-2 py-1"
+                >Horror</span
+              >
+              <span class="text-xs bg-gray-600 text-white px-2 py-1"
+                >Short Stories</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$12.34</p>
+          </div>
+        </div>
+
+        <!-- Product Card 7 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-7.jpg"
+            srcset="
+              src/image/sctn-4-7-halved.jpg 1023w,
+              src/image/sctn-4-7.jpg        1024w
+            "
+            alt="The One"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              THE ONE
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">John Marrs</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-gray-700 text-white px-2 py-1"
+                >Mystery</span
+              >
+              <span class="text-xs bg-gray-600 text-white px-2 py-1"
+                >Thriller</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$16.20</p>
+          </div>
+        </div>
+
+        <!-- Product Card 8 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-8.jpg"
+            srcset="
+              src/image/sctn-4-8-halved.jpg 1023w,
+              src/image/sctn-4-8.jpg        1024w
+            "
+            alt="BABEL"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              BABEL
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">R. F. Kuang</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-gray-700 text-white px-2 py-1"
                 >Fantasy</span
               >
               <span class="text-xs bg-gray-600 text-white px-2 py-1"
-                >Children</span
+                >Historical Fiction</span
               >
             </div>
-            <p class="text-lg font-bold mt-4">$20.00</p>
+            <p class="text-lg font-bold mt-4">$12.34</p>
+          </div>
+        </div>
+
+        <!-- Product Card 9 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-9.jpg"
+            srcset="
+              src/image/sctn-4-9-halved.jpg 1023w,
+              src/image/sctn-4-9.jpg        1024w
+            "
+            alt="PIRANESI"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              PIRANESI
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Susanna Clarke</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-gray-700 text-white px-2 py-1"
+                >Fantasy</span
+              >
+              <span class="text-xs bg-gray-600 text-white px-2 py-1"
+                >Fiction</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$16.20</p>
+          </div>
+        </div>
+
+        <!-- Product Card 10 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-10.jpg"
+            srcset="
+              src/image/sctn-4-10-halved.jpg 1023w,
+              src/image/sctn-4-10.jpg        1024w
+            "
+            alt="NONE OF THIS IS TRUE"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              NONE OF THIS IS TRUE
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Lisa Jewell</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-gray-700 text-white px-2 py-1"
+                >Mystery</span
+              >
+              <span class="text-xs bg-gray-600 text-white px-2 py-1"
+                >Thriller</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$12.34</p>
+          </div>
+        </div>
+
+        <!-- Product Card 11 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-11.jpg"
+            srcset="
+              src/image/sctn-4-11-halved.jpg 1023w,
+              src/image/sctn-4-11.jpg        1024w
+            "
+            alt="LOCAL WOMAN MISSING"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              LOCAL WOMAN MISSING
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Mary Kubica</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-gray-700 text-white px-2 py-1"
+                >Mystery</span
+              >
+              <span class="text-xs bg-gray-600 text-white px-2 py-1"
+                >Thriller</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$16.20</p>
+          </div>
+        </div>
+
+        <!-- Product Card 12 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-12.jpg"
+            srcset="
+              src/image/sctn-4-12-halved.jpg 1023w,
+              src/image/sctn-4-12.jpg        1024w
+            "
+            alt="MAD HONEY"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              MAD HONEY
+            </h3>
+            <p class="text-gray-600 text-xs mt-1 truncate">
+              Jodi Picoult & Jennifer Finney Boylan
+            </p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-gray-700 text-white px-2 py-1"
+                >Fiction</span
+              >
+              <span class="text-xs bg-gray-600 text-white px-2 py-1"
+                >Mystery</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$12.34</p>
           </div>
         </div>
       </div>
@@ -797,181 +1033,7 @@
       </div>
     </section>
 
-    <!-- SECTION 6 | Latest News -->
-    <section class="max-w-[85rem] px-8 mx-auto bg-gray-100 py-16">
-      <div class="flex items-center justify-between mb-12">
-        <div>
-          <h2 class="text-3xl font-bold text-gray-800">Latest News</h2>
-          <p class="text-gray-600 mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <a
-          href="#"
-          class="bg-gray-700 text-white px-6 py-2 shadow hover:bg-gray-600 flex items-center space-x-2"
-        >
-          <span>View more</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M5 12h14M12 5l7 7-7 7"
-            />
-          </svg>
-        </a>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Article 1 -->
-        <div class="bg-white shadow overflow-hidden">
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Article Image"
-            class="w-full h-40 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">
-              Why reading is important for our children?
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore...
-            </p>
-            <a
-              href="#"
-              class="text-gray-700 text-sm font-semibold hover:underline"
-              >Continue reading</a
-            >
-            <div class="flex items-center mt-4">
-              <img
-                src="https://via.placeholder.com/50"
-                alt="Author Image"
-                class="w-8 h-8 mr-2"
-              />
-              <div>
-                <p class="text-sm text-gray-800 font-semibold">Lidya Humble</p>
-                <p class="text-xs text-gray-600">2 days ago</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Article 2 -->
-        <div class="bg-white shadow overflow-hidden">
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Article Image"
-            class="w-full h-40 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">
-              Benefits of reading: Smart, Diligent, Happy
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore...
-            </p>
-            <a
-              href="#"
-              class="text-gray-700 text-sm font-semibold hover:underline"
-              >Continue reading</a
-            >
-            <div class="flex items-center mt-4">
-              <img
-                src="https://via.placeholder.com/50"
-                alt="Author Image"
-                class="w-8 h-8 mr-2"
-              />
-              <div>
-                <p class="text-sm text-gray-800 font-semibold">
-                  Steffanny William
-                </p>
-                <p class="text-xs text-gray-600">5 August 2020</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Article 3 -->
-        <div class="bg-white shadow overflow-hidden">
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Article Image"
-            class="w-full h-40 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">
-              What books you should read in 2020?
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore...
-            </p>
-            <a
-              href="#"
-              class="text-gray-700 text-sm font-semibold hover:underline"
-              >Continue reading</a
-            >
-            <div class="flex items-center mt-4">
-              <img
-                src="https://via.placeholder.com/50"
-                alt="Author Image"
-                class="w-8 h-8 mr-2"
-              />
-              <div>
-                <p class="text-sm text-gray-800 font-semibold">James Wong</p>
-                <p class="text-xs text-gray-600">3 August 2020</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Article 4 -->
-        <div class="bg-white shadow overflow-hidden">
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Article Image"
-            class="w-full h-40 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">
-              10 Things you must know to improve your reading skills
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore...
-            </p>
-            <a
-              href="#"
-              class="text-gray-700 text-sm font-semibold hover:underline"
-              >Continue reading</a
-            >
-            <div class="flex items-center mt-4">
-              <img
-                src="https://via.placeholder.com/50"
-                alt="Author Image"
-                class="w-8 h-8 mr-2"
-              />
-              <div>
-                <p class="text-sm text-gray-800 font-semibold">
-                  Franklin Junior
-                </p>
-                <p class="text-xs text-gray-600">1 August 2020</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 7 | Newsletter -->
+    <!-- SECTION 6 | Newsletter -->
     <section
       class="max-w-7xl mx-auto mb-32 relative bg-gray-800 py-12 shadow-lg"
     >
