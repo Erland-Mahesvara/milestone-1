@@ -39,7 +39,7 @@
         </div>
 
         <!-- Search Bar -->
-        <div class="hidden lg:flex items-center space-x-2 flex-grow max-w-lg">
+        <div class="mx-[6.5vw] flex items-center space-x-2 flex-grow">
           <button class="text-gray-500 text-sm flex items-center space-x-1">
             <span>Menus</span>
             <svg
@@ -87,7 +87,7 @@
             Sign Up
           </button>
           <!-- Mobile Menu Icon -->
-          <button class="lg:hidden text-gray-500">
+          <button class="md:hidden text-gray-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -574,22 +574,26 @@
 
       <!-- Product Grid -->
       <div
-        class="grid align-center grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-6"
+        class="grid align-center grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6"
       >
-        <!-- Product Card -->
+        <!-- Product Card 1 -->
         <div
           class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
         >
           <img
-            src="src/image/sctn-4-1.jpg"
-            alt="Outliers"
-            class="object-cover"
+            src="src/image/sctn-4-4.jpg"
+            srcset="
+              src/image/sctn-4-1-halved.jpg 1023w,
+              src/image/sctn-4-1.jpg        1024w
+            "
+            alt="Daisy Jones & The Six"
+            class="w-full object-cover"
           />
           <div class="p-4 text-center">
             <h3
               class="text-sm font-semibold hover:text-gray-700 transition-colors"
             >
-              LERAS NUYAS
+              DAISY JONES & THE SIX
             </h3>
             <p class="text-gray-600 text-xs mt-1">
               Jertasas nyrae iases naryasaas
@@ -607,7 +611,7 @@
           </div>
         </div>
 
-        <!-- Product Card -->
+        <!-- Product Card 2 -->
         <div
           class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
         >
@@ -634,7 +638,7 @@
           </div>
         </div>
 
-        <!-- Product Card -->
+        <!-- Product Card 3 -->
         <div
           class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
         >
@@ -661,7 +665,7 @@
           </div>
         </div>
 
-        <!-- Product Card -->
+        <!-- Product Card 4 -->
         <div
           class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
         >
@@ -688,7 +692,7 @@
           </div>
         </div>
 
-        <!-- Product Card -->
+        <!-- Product Card 5 -->
         <div
           class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
         >
@@ -696,145 +700,6 @@
             src="src/image/sctn-4-5.jpg"
             alt="Alice's Adventures"
             class="object-cover"
-          />
-          <div class="p-4 text-center">
-            <h3 class="text-sm font-semibold">BEREAS MIOAS</h3>
-            <p class="text-gray-600 text-xs mt-1">
-              Jertasas nyrae iases naryasaas
-            </p>
-            <!-- Genre Tags -->
-            <div class="flex justify-center space-x-2 mt-2">
-              <span class="text-xs bg-gray-700 text-white px-2 py-1"
-                >Fantasy</span
-              >
-              <span class="text-xs bg-gray-600 text-white px-2 py-1"
-                >Children</span
-              >
-            </div>
-            <p class="text-lg font-bold mt-4">$20.00</p>
-          </div>
-        </div>
-
-        <!-- Product Card -->
-        <div
-          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
-        >
-          <img
-            src="https://via.placeholder.com/200x300"
-            alt="Outliers"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4 text-center">
-            <h3
-              class="text-sm font-semibold hover:text-gray-700 transition-colors"
-            >
-              LERAS NUYAS
-            </h3>
-            <p class="text-gray-600 text-xs mt-1">
-              Jertasas nyrae iases naryasaas
-            </p>
-            <!-- Genre Tags -->
-            <div class="flex justify-center space-x-2 mt-2">
-              <span class="text-xs bg-gray-700 text-white px-2 py-1"
-                >Biography</span
-              >
-              <span class="text-xs bg-gray-600 text-white px-2 py-1"
-                >Self-help</span
-              >
-            </div>
-            <p class="text-lg font-bold mt-4">$16.20</p>
-          </div>
-        </div>
-
-        <!-- Product Card -->
-        <div
-          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
-        >
-          <img
-            src="https://via.placeholder.com/200x300"
-            alt="20,000 Leagues"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4 text-center">
-            <h3 class="text-sm font-semibold">DOLORE FEROAS</h3>
-            <p class="text-gray-600 text-xs mt-1">
-              Bertasas cerhyuas naryasaas
-            </p>
-            <!-- Genre Tags -->
-            <div class="flex justify-center space-x-2 mt-2">
-              <span class="text-xs bg-gray-700 text-white px-2 py-1"
-                >Science</span
-              >
-              <span class="text-xs bg-gray-600 text-white px-2 py-1"
-                >Classic</span
-              >
-            </div>
-            <p class="text-lg font-bold mt-4">$18.99</p>
-          </div>
-        </div>
-
-        <!-- Product Card -->
-        <div
-          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
-        >
-          <img
-            src="https://via.placeholder.com/200x300"
-            alt="Outliers"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4 text-center">
-            <h3 class="text-sm font-semibold">LERAS NUYAS</h3>
-            <p class="text-gray-600 text-xs mt-1">
-              Jertasas nyrae iases naryasaas
-            </p>
-            <!-- Genre Tags -->
-            <div class="flex justify-center space-x-2 mt-2">
-              <span class="text-xs bg-gray-700 text-white px-2 py-1"
-                >Biography</span
-              >
-              <span class="text-xs bg-gray-600 text-white px-2 py-1"
-                >Self-help</span
-              >
-            </div>
-            <p class="text-lg font-bold mt-4">$16.20</p>
-          </div>
-        </div>
-
-        <!-- Product Card -->
-        <div
-          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
-        >
-          <img
-            src="https://via.placeholder.com/200x300"
-            alt="The Divine Comedy"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4 text-center">
-            <h3 class="text-sm font-semibold">KERTYSAS</h3>
-            <p class="text-gray-600 text-xs mt-1">
-              Bertasas cerhyuas naryasaas
-            </p>
-            <!-- Genre Tags -->
-            <div class="flex justify-center space-x-2 mt-2">
-              <span class="text-xs bg-gray-700 text-white px-2 py-1"
-                >Poetry</span
-              >
-              <span class="text-xs bg-gray-600 text-white px-2 py-1"
-                >Classic</span
-              >
-            </div>
-            <p class="text-lg font-bold mt-4">$17.80</p>
-          </div>
-        </div>
-
-        <!-- Product Card -->
-        <div
-          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
-        >
-          <img
-            src="https://via.placeholder.com/200x300"
-            alt="Alice's Adventures"
-            class="w-full h-48 object-cover"
           />
           <div class="p-4 text-center">
             <h3 class="text-sm font-semibold">BEREAS MIOAS</h3>
