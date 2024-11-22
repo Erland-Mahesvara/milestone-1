@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookish - Book Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <!-- Header Top -->
+      <div class="px-4 py-3 flex items-center justify-between">
+        <!-- Logo and Name -->
+        <div class="flex items-center space-x-3">
+          <div>
+            <h1 class="text-lg font-semibold text-gray-800">Bookish</h1>
+            <p class="hidden sm:block text-sm text-gray-500">
+              Book Store Website
+            </p>
+          </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="mx-[6.5vw] flex items-center space-x-2 flex-grow">
+          <input
+            type="text"
+            placeholder="Search over 30 million book titles"
+            class="flex-grow border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-800"
+          />
+          <button class="text-gray-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-4.35-4.35m1.35-4.65a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex items-center space-x-3">
+          <button class="hidden md:block text-gray-600 text-sm">Log In</button>
+          <button class="bg-[#2A9D8F] text-white px-4 py-2 text-sm">
+            Sign Up
+          </button>
+          <!-- Mobile Menu Icon -->
+          <button class="md:hidden text-gray-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav class="bg-[#bd5b0d]">
+        <ul
+          class="flex justify-center space-x-6 text-sm font-medium text-white py-2"
+        >
+          <li>
+            <a href="#featured" class="hover:text-gray-800">Featured</a>
+          </li>
+          <li>
+            <a href="#collection" class="hover:text-gray-800">Collection</a>
+          </li>
+          <li>
+            <a href="#special-offers" class="hover:text-gray-800"
+              >Special Offers</a
+            >
+          </li>
+          <li>
+            <a href="#catalogue" class="hover:text-gray-800">Catalogue</a>
+          </li>
+          <li>
+            <a href="#testimonials" class="hover:text-gray-800">Testimonials</a>
+          </li>
+          <li>
+            <a href="#latest-news" class="hover:text-gray-800">Latest News</a>
+          </li>
+          <li>
+            <a href="#newsletter" class="hover:text-gray-800">Newsletter</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SECTION 1 | Featured -->
+    <section class="relative text-white">
+      <!-- Background Image -->
+      <div class="absolute inset-0 -z-10">
+        <img
+          src="src/image/ftrd-1.jpg"
+          alt="The History of Phipino"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-[#264653] bg-opacity-60"></div>
+
+      <!-- Content -->
+      <div
+        class="relative flex flex-col justify-center items-center h-[400px] lg:h-[600px] text-center"
+      >
+        <!-- Tag -->
+        <div
+          class="bg-[#2A9D8F] text-gray-300 text-xs uppercase tracking-widest font-medium px-3 py-1 mb-4"
+        >
+          HISTORY
+        </div>
+        <!-- Title -->
+        <h1 class="text-3xl lg:text-5xl mb-6">TWELVE WHO RULED</h1>
+        <!-- Button -->
+        <a
+          href="#"
+          class="bg-[#E76F51] text-white text-sm font-medium px-6 py-3 hover:bg-[#F4A261]"
+        >
+          Browse Store
+        </a>
+
+        <!-- Carousel Indicators -->
+        <div class="absolute bottom-4 flex space-x-2">
+          <span class="h-2 w-4 bg-gray-300"></span>
+          <span class="h-2 w-2 bg-gray-500"></span>
+          <span class="h-2 w-2 bg-gray-500"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 | Collection -->
+    <section class="max-w-[85rem] px-8 mx-auto bg-gray-100 py-10">
+      <div
+        class="flex flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-12"
+      >
+        <!-- Recommended For You Section -->
+        <div class="bg-white p-8 shadow flex-1">
+          <h2 class="text-2xl font-semibold mb-2">Recommended For You</h2>
+          <p class="text-gray-600 text-sm mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="flex items-center justify-center relative">
+            <!-- Book Cards -->
+            <div
+              class="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-items-center items-center"
+            >
+              <div
+                class="bg-[#2A9D8F] text-white flex flex-col items-center justify-center h-48 w-32 shadow"
+              >
+                <p class="font-bold text-center">Cat Adventure</p>
+                <span class="text-xs mt-2 text-center"
+                  >Lorem ipsum dolor sit amet</span
+                >
+              </div>
+              <div
+                class="bg-[#E76F51] text-white flex flex-col items-center justify-center h-48 w-32 shadow"
+              >
+                <p class="font-bold text-center">Such a Fun Age</p>
+                <span class="text-xs mt-2 text-center"
+                  >Lorem ipsum dolor sit amet</span
+                >
+              </div>
+              <div
+                class="bg-[#F4A261] text-white flex flex-col items-center justify-center h-48 w-32 shadow"
+              >
+                <p class="font-bold text-center">HOMIE</p>
+                <span class="text-xs mt-2 text-center">DANZE STIHN</span>
+              </div>
+              <div
+                class="bg-gray-500 text-white flex flex-col items-center justify-center h-48 w-32 shadow"
+              >
+                <p class="font-bold text-center">REAL LIFE</p>
+                <span class="text-xs mt-2 text-center"
+                  >Lorem ipsum dolor sit amet</span
+                >
+              </div>
+            </div>
+            <!-- Arrow -->
+            <button
+              class="absolute -right-6 bg-gray-300 text-gray-800 w-8 h-8 shadow flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Popular in 2020 Section -->
+        <div class="bg-white p-8 shadow flex-1">
+          <h2 class="text-2xl font-semibold mb-2">Popular in 2020</h2>
+          <p class="text-gray-600 text-sm mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="flex items-center justify-center relative">
+            <!-- Book Cards -->
+            <div
+              class="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-items-center items-center"
+            >
+              <div
+                class="bg-[#2A9D8F] text-white flex flex-col items-center justify-center h-48 w-32 shadow"
+              >
+                <p class="font-bold text-center">Emily and the Backbone</p>
+                <span class="text-xs mt-2 text-center"
+                  >Lorem ipsum dolor sit amet</span
+                >
+              </div>
+              <div
+                class="bg-[#E76F51] text-white flex flex-col items-center justify-center h-48 w-32 shadow"
+              >
+                <p class="font-bold text-center">A Burning</p>
+                <span class="text-xs mt-2 text-center"
+                  >Lorem ipsum dolor sit amet</span
+                >
+              </div>
+              <div
+                class="bg-[#F4A261] text-white flex flex-col items-center justify-center h-48 w-32 shadow"
+              >
+                <p class="font-bold text-center">NORMAL PEOPLE</p>
+                <span class="text-xs mt-2 text-center">A NOVEL</span>
+              </div>
+              <div
+                class="bg-gray-500 text-white flex flex-col items-center justify-center h-48 w-32 shadow"
+              >
+                <p class="font-bold text-center">The Adventure</p>
+                <span class="text-xs mt-2 text-center"
+                  >Lorem ipsum dolor sit amet</span
+                >
+              </div>
+            </div>
+            <!-- Arrow -->
+            <button
+              class="absolute -right-6 bg-gray-300 text-gray-800 w-8 h-8 shadow flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 | Special Offers -->
+    <section class="max-w-[85rem] px-8 mx-auto bg-gray-100 py-12">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-800">
+          Special Offers
+        </h2>
+        <p class="text-gray-600 mt-2">
+          Grab bestselling reads at unbeatable prices—limited time only!
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="relative bg-white shadow overflow-hidden">
+          <span
+            class="absolute top-3 left-3 bg-orange-500 text-white text-sm font-bold px-3 py-1 animate-bounce"
+          >
+            SALE
+          </span>
+          <img
+            src="src/image/sctn-3-1.jpg"
+            alt="SECONDS"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-lg font-bold mb-2">THE 'A' BOOK</h3>
+            <div class="flex space-x-2 mb-4">
+              <span class="bg-[#2A9D8F] text-gray-100 text-xs px-2 py-1"
+                >BIOGRAPHY</span
+              >
+              <span class="bg-[#E76F51] text-gray-100 text-xs px-2 py-1"
+                >THRILLER</span
+              >
+              <span class="bg-[#F4A261] text-gray-100 text-xs px-2 py-1"
+                >HORROR</span
+              >
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="text-gray-800 text-sm font-semibold">Kevin Smiley</p>
+            <div class="flex items-center justify-between mt-6">
+              <button
+                class="bg-[#E76F51] text-white text-sm px-4 py-2 shadow hover:bg-[#F4A261] flex items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 3h18M9 9h12m-6 6h6m-6 6H9"
+                  />
+                </svg>
+                Add to cart
+              </button>
+              <div class="text-right">
+                <p class="text-lg font-bold text-gray-800">$18,78</p>
+                <p class="text-sm text-gray-400 line-through">$25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative bg-white shadow overflow-hidden">
+          <span
+            class="absolute top-3 left-3 bg-orange-500 text-white text-sm font-bold px-3 py-1 animate-bounce"
+          >
+            SALE
+          </span>
+          <img
+            src="src/image/sctn-3-2.jpg"
+            alt="Terrible Madness"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-lg font-bold mb-2">THE 'B' BOOK</h3>
+            <div class="flex space-x-2 mb-4">
+              <span class="bg-[#2A9D8F] text-gray-100 text-xs px-2 py-1"
+                >BIOGRAPHY</span
+              >
+              <span class="bg-[#E76F51] text-gray-100 text-xs px-2 py-1"
+                >THRILLER</span
+              >
+              <span class="bg-[#F4A261] text-gray-100 text-xs px-2 py-1"
+                >HORROR</span
+              >
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="text-gray-800 text-sm font-semibold">David Here</p>
+            <div class="flex items-center justify-between mt-6">
+              <button
+                class="bg-[#E76F51] text-white text-sm px-4 py-2 shadow hover:bg-[#F4A261] flex items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 3h18M9 9h12m-6 6h6m-6 6H9"
+                  />
+                </svg>
+                Add to cart
+              </button>
+              <div class="text-right">
+                <p class="text-lg font-bold text-gray-800">$18,78</p>
+                <p class="text-sm text-gray-400 line-through">$25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative bg-white shadow overflow-hidden">
+          <span
+            class="absolute top-3 left-3 bg-orange-500 text-white text-sm font-bold px-3 py-1 animate-bounce"
+          >
+            SALE
+          </span>
+          <img
+            src="src/image/sctn-3-3.jpg"
+            alt="REWORK"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-lg font-bold mb-2">THE 'C' BOOK</h3>
+            <div class="flex space-x-2 mb-4">
+              <span class="bg-[#2A9D8F] text-gray-100 text-xs px-2 py-1"
+                >BIOGRAPHY</span
+              >
+              <span class="bg-[#E76F51] text-gray-100 text-xs px-2 py-1"
+                >THRILLER</span
+              >
+              <span class="bg-[#F4A261] text-gray-100 text-xs px-2 py-1"
+                >HORROR</span
+              >
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="text-gray-800 text-sm font-semibold">Margaretha Helew</p>
+            <div class="flex items-center justify-between mt-6">
+              <button
+                class="bg-[#E76F51] text-white text-sm px-4 py-2 shadow hover:bg-[#F4A261] flex items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 3h18M9 9h12m-6 6h6m-6 6H9"
+                  />
+                </svg>
+                Add to cart
+              </button>
+              <div class="text-right">
+                <p class="text-lg font-bold text-gray-800">$18,78</p>
+                <p class="text-sm text-gray-400 line-through">$25</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="flex justify-center mt-12 space-x-4">
+        <button
+          class="bg-gray-300 text-gray-800 w-10 h-10 shadow flex items-center justify-center hover:bg-gray-400"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+        <button
+          class="bg-[#E76F51] text-white w-10 h-10 shadow flex items-center justify-center hover:bg-[#F4A261]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION 4 | Catalgoue -->
+    <section class="max-w-[85rem] px-8 mx-auto bg-gray-100 py-12">
+      <h2 class="mb-6 text-3xl lg:text-4xl font-bold text-gray-800">
+        Catalogue
+      </h2>
+      <!-- Categories -->
+      <div class="flex flex-wrap gap-4 mb-8">
+        <button class="px-4 py-2 bg-[#264653] text-white shadow">All</button>
+        <button
+          class="px-4 py-2 bg-gray-300 text-gray-900 shadow hover:bg-gray-400"
+        >
+          Fiction
+        </button>
+        <button
+          class="px-4 py-2 bg-gray-300 text-gray-900 shadow hover:bg-gray-400"
+        >
+          Health & Fitness
+        </button>
+        <button
+          class="px-4 py-2 bg-gray-300 text-gray-900 shadow hover:bg-gray-400"
+        >
+          History
+        </button>
+        <button
+          class="px-4 py-2 bg-gray-300 text-gray-900 shadow hover:bg-gray-400"
+        >
+          Mystery
+        </button>
+        <button
+          class="px-4 py-2 bg-gray-300 text-gray-900 shadow hover:bg-gray-400"
+        >
+          Politics & Current Affairs
+        </button>
+        <button
+          class="px-4 py-2 bg-gray-300 text-gray-900 shadow hover:bg-gray-400"
+        >
+          Religion
+        </button>
+      </div>
+
+      <!-- Product Grid -->
+      <div
+        class="grid align-center grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6"
+      >
+        <!-- Product Card 1 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-1-halved.jpg.jpg"
+            srcset="
+              src/image/sctn-4-1-halved.jpg 1023w,
+              src/image/sctn-4-1.jpg        1024w
+            "
+            alt="Daisy Jones & The Six"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              DAISY JONES & THE SIX
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Taylor Jenkins Reid</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-[#E76F51] text-white px-2 py-1"
+                >Historical Fiction</span
+              >
+              <span class="text-xs bg-[#F4A261] text-white px-2 py-1"
+                >Music</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$16.20</p>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-2-halved.jpg.jpg"
+            srcset="
+              src/image/sctn-4-2-halved.jpg 1023w,
+              src/image/sctn-4-2.jpg        1024w
+            "
+            alt="Daisy Jones & The Six"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              THE FROZEN RIVER
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Ariel Lawhon</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-[#E76F51] text-white px-2 py-1"
+                >Historical Fiction</span
+              >
+              <span class="text-xs bg-[#F4A261] text-white px-2 py-1"
+                >Myster</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$12.34</p>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-3.jpg"
+            srcset="
+              src/image/sctn-4-3-halved.jpg 1023w,
+              src/image/sctn-4-3.jpg        1024w
+            "
+            alt="Daisy Jones & The Six"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              RED RISING
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Pierce Brown</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-[#E76F51] text-white px-2 py-1"
+                >Fantasy</span
+              >
+              <span class="text-xs bg-[#F4A261] text-white px-2 py-1"
+                >Science Fiction</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$16.20</p>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-4-halved.jpg.jpg"
+            srcset="
+              src/image/sctn-4-4-halved.jpg 1023w,
+              src/image/sctn-4-4.jpg        1024w
+            "
+            alt="Daisy Jones & The Six"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              DARK MATTER
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Blake Crouch</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-[#E76F51] text-white px-2 py-1"
+                >Science Fiction</span
+              >
+              <span class="text-xs bg-[#F4A261] text-white px-2 py-1"
+                >Thriller</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$12.34</p>
+          </div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-5.jpg"
+            srcset="
+              src/image/sctn-4-5-halved.jpg 1023w,
+              src/image/sctn-4-5.jpg        1024w
+            "
+            alt="Daisy Jones & The Six"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              THE INSITUTTE
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Stephen King</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-[#E76F51] text-white px-2 py-1"
+                >Horror</span
+              >
+              <span class="text-xs bg-[#F4A261] text-white px-2 py-1"
+                >Science Fiction</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$16.20</p>
+          </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-6.jpg"
+            srcset="
+              src/image/sctn-4-6-halved.jpg 1023w,
+              src/image/sctn-4-6.jpg        1024w
+            "
+            alt="Daisy Jones & The Six"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              THINGS WE LOST IN THE FIRE
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">
+              Jertasas nyrae iases naryasaas
+            </p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-[#E76F51] text-white px-2 py-1"
+                >Horror</span
+              >
+              <span class="text-xs bg-[#F4A261] text-white px-2 py-1"
+                >Short Stories</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$12.34</p>
+          </div>
+        </div>
+
+        <!-- Product Card 7 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-7.jpg"
+            srcset="
+              src/image/sctn-4-7-halved.jpg 1023w,
+              src/image/sctn-4-7.jpg        1024w
+            "
+            alt="The One"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              THE ONE
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">John Marrs</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-[#E76F51] text-white px-2 py-1"
+                >Mystery</span
+              >
+              <span class="text-xs bg-[#F4A261] text-white px-2 py-1"
+                >Thriller</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$16.20</p>
+          </div>
+        </div>
+
+        <!-- Product Card 8 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-8.jpg"
+            srcset="
+              src/image/sctn-4-8-halved.jpg 1023w,
+              src/image/sctn-4-8.jpg        1024w
+            "
+            alt="BABEL"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              BABEL
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">R. F. Kuang</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-[#E76F51] text-white px-2 py-1"
+                >Fantasy</span
+              >
+              <span class="text-xs bg-[#F4A261] text-white px-2 py-1"
+                >Historical Fiction</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$12.34</p>
+          </div>
+        </div>
+
+        <!-- Product Card 9 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-9.jpg"
+            srcset="
+              src/image/sctn-4-9-halved.jpg 1023w,
+              src/image/sctn-4-9.jpg        1024w
+            "
+            alt="PIRANESI"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              PIRANESI
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Susanna Clarke</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-[#E76F51] text-white px-2 py-1"
+                >Fantasy</span
+              >
+              <span class="text-xs bg-[#F4A261] text-white px-2 py-1"
+                >Fiction</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$16.20</p>
+          </div>
+        </div>
+
+        <!-- Product Card 10 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-10.jpg"
+            srcset="
+              src/image/sctn-4-10-halved.jpg 1023w,
+              src/image/sctn-4-10.jpg        1024w
+            "
+            alt="NONE OF THIS IS TRUE"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              NONE OF THIS IS TRUE
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Lisa Jewell</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-[#E76F51] text-white px-2 py-1"
+                >Mystery</span
+              >
+              <span class="text-xs bg-[#F4A261] text-white px-2 py-1"
+                >Thriller</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$12.34</p>
+          </div>
+        </div>
+
+        <!-- Product Card 11 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-11.jpg"
+            srcset="
+              src/image/sctn-4-11-halved.jpg 1023w,
+              src/image/sctn-4-11.jpg        1024w
+            "
+            alt="LOCAL WOMAN MISSING"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              LOCAL WOMAN MISSING
+            </h3>
+            <p class="text-gray-600 text-xs mt-1">Mary Kubica</p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-[#E76F51] text-white px-2 py-1"
+                >Mystery</span
+              >
+              <span class="text-xs bg-[#F4A261] text-white px-2 py-1"
+                >Thriller</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$16.20</p>
+          </div>
+        </div>
+
+        <!-- Product Card 12 -->
+        <div
+          class="bg-white shadow relative hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <img
+            src="src/image/sctn-4-12.jpg"
+            srcset="
+              src/image/sctn-4-12-halved.jpg 1023w,
+              src/image/sctn-4-12.jpg        1024w
+            "
+            alt="MAD HONEY"
+            class="w-full object-cover"
+          />
+          <div class="p-4 text-center">
+            <h3
+              class="text-sm font-semibold hover:text-gray-700 transition-colors truncate"
+            >
+              MAD HONEY
+            </h3>
+            <p class="text-gray-600 text-xs mt-1 truncate">
+              Jodi Picoult & Jennifer Finney Boylan
+            </p>
+            <!-- Genre Tags -->
+            <div class="flex justify-center space-x-2 mt-2">
+              <span class="text-xs bg-[#E76F51] text-white px-2 py-1"
+                >Fiction</span
+              >
+              <span class="text-xs bg-[#F4A261] text-white px-2 py-1"
+                >Mystery</span
+              >
+            </div>
+            <p class="text-lg font-bold mt-4">$12.34</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 | Testimonials -->
+    <section class="max-w-[85rem] px-8 mx-auto bg-gray-100 py-16">
+      <div class="text-center mb-12">
+        <h4 class="text-sm font-semibold text-gray-600 uppercase tracking-wide">
+          Testimonials
+        </h4>
+        <h2 class="text-3xl font-bold text-gray-800">
+          What our clients say about us
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white shadow p-6 text-center">
+          <div class="text-gray-600 text-4xl mb-4">“</div>
+          <p class="text-gray-700 mb-6">
+            I've been working with these guys for a long time, and I can say
+            that my house is in the perfect hands.
+          </p>
+          <hr class="border-gray-300 mb-4" />
+          <img
+            src="https://via.placeholder.com/50"
+            alt="Allan Collins"
+            class="w-16 h-16 mx-auto mb-2"
+          />
+          <h3 class="text-sm font-bold text-gray-800">Allan Collins</h3>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white shadow p-6 text-center">
+          <div class="text-gray-600 text-4xl mb-4">“</div>
+          <p class="text-gray-700 mb-6">
+            Working with Sentry Oak is just great, every problem in my house is
+            solved in a matter of days.
+          </p>
+          <hr class="border-gray-300 mb-4" />
+          <img
+            src="https://via.placeholder.com/50"
+            alt="Clay Washington"
+            class="w-16 h-16 mx-auto mb-2"
+          />
+          <h3 class="text-sm font-bold text-gray-800">Clay Washington</h3>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-white shadow p-6 text-center">
+          <div class="text-gray-600 text-4xl mb-4">“</div>
+          <p class="text-gray-700 mb-6">
+            Once a pipe burst in my kitchen and an hour later it was already
+            repaired, thanks to Sentry Oak.
+          </p>
+          <hr class="border-gray-300 mb-4" />
+          <img
+            src="https://via.placeholder.com/50"
+            alt="Tanya Grant"
+            class="w-16 h-16 mx-auto mb-2"
+          />
+          <h3 class="text-sm font-bold text-gray-800">Tanya Grant</h3>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">
+          No two homes are alike!
+        </h3>
+        <p class="text-gray-700 mb-6">
+          Our Elite network, combined with your personal needs, allows us to
+          create a home plan specifically tailored to you.
+        </p>
+        <button
+          class="bg-[#E76F51] text-white px-6 py-3 shadow hover:bg-[#F4A261]"
+        >
+          Get a Quote
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION 6 | Newsletter -->
+    <section
+      class="max-w-7xl mx-auto mb-32 relative bg-[#2A9D8F] py-12 shadow-lg"
+    >
+      <!-- Content -->
+      <div
+        class="relative z-10 flex flex-col items-center justify-center text-center"
+      >
+        <h2 class="text-white text-xl lg:text-2xl font-semibold mb-8">
+          Subscribe to our newsletter for the latest book updates
+        </h2>
+        <form action="#" method="POST" class="flex w-full max-w-lg mx-auto">
+          <input
+            type="email"
+            name="email"
+            placeholder="Type your email here"
+            class="flex-grow px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 border border-gray-600"
+            required
+          />
+          <button
+            type="submit"
+            class="bg-[#E76F51] text-white px-6 py-3 font-bold hover:bg-[#F4A261] transition-all"
+          >
+            SUBSCRIBE
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#103a35] text-gray-300 py-10 px-4 lg:px-20">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- About -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">About Us</h3>
+          <p class="text-sm">
+            We provide the best books, resources, and recommendations to help
+            you on your journey to knowledge and growth.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-gray-100">Home</a></li>
+            <li><a href="#" class="hover:text-gray-100">About</a></li>
+            <li><a href="#" class="hover:text-gray-100">Catalogue</a></li>
+            <li><a href="#" class="hover:text-gray-100">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <span class="font-semibold">Address:</span> 123 Book St, Library
+              City
+            </li>
+            <li><span class="font-semibold">Phone:</span> +123 456 7890</li>
+            <li>
+              <span class="font-semibold">Email:</span> contact@bookstore.com
+            </li>
+          </ul>
+        </div>
+
+        <!-- Map -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Our Location</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345096445!2d-122.41941528468127!3d37.77492927975992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c9cfc1e91%3A0xe8bdbf537ee2e8c6!2sSan%20Francisco%20Public%20Library!5e0!3m2!1sen!2sus!4v1683587292952!5m2!1sen!2sus"
+            width="100%"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-10 border-t border-gray-600 pt-6 text-center">
+        <p class="text-sm">&copy; 2024 Bookstore. All rights reserved.</p>
+        <ul class="flex justify-center space-x-6 mt-4">
+          <li>
+            <a href="#" class="hover:text-gray-100"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-100"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-100"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
